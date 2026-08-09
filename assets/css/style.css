@@ -453,7 +453,7 @@ html[data-theme="light"] .input-group input::placeholder { color: rgba(8, 32, 63
 
 
 .support-box {
-    width: 35%;
+    width: 60%;
     margin:auto;
     margin-top: 15px;
      animation: slideDown .65s ease both;
@@ -838,6 +838,7 @@ html[data-theme="light"] .saved-empty {
 
 /* ---------- 16) Responsive ---------- */
 @media (max-width: 860px) {
+       .support-box { width: 50%;}
   body::before { background-size: 560px auto; background-position: center 170px; }
   .lower-grid,
   .cards-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -845,12 +846,15 @@ html[data-theme="light"] .saved-empty {
   .ad-card { height: 238px; width: min(82%, 480px); }
 }
 @media (max-width: 720px) {
+       .support-box { width: 70%;}
   .status-actions { grid-template-columns: 1fr; }
   .sales-toolbar { grid-template-columns: 1fr; }
   .status-only-shell { justify-content: flex-start; }
   .status-only-page::before { background-size: 520px auto; }
 }
 @media (max-width: 620px) {
+       .support-box { width: 80%;}
+
   .container { width: min(100% - 22px, 100%); }
   .site-header { top: 8px; border-radius: 24px; width: calc(100% - 18px); padding: 8px; }
   .header-nav { gap: 6px; }
@@ -888,6 +892,8 @@ html[data-theme="light"] .saved-empty {
   .dealer-card p { font-size: clamp(1.55rem, 8vw, 2.4rem); line-height: 1.25; }
 }
 @media (max-width: 380px) {
+       .support-box { width: 80%;}
+
   .container { width: min(100% - 12px, 100%); }
   .site-header { top: 6px; width: calc(100% - 10px); padding: 7px; border-radius: 20px; }
   .header-nav { gap: 4px; }
@@ -928,6 +934,8 @@ html[data-theme="light"] .saved-empty {
   .footer p { font-size: .86rem; }
 }
 @media (max-width: 360px) {
+       .support-box { width: 85%;}
+
   .site-header { width: calc(100% - 8px); padding: 6px; }
   .nav-link { min-height: 52px; font-size: .58rem; padding: 6px 2px; }
   .brand-title { font-size: 1.8rem; }
@@ -942,6 +950,8 @@ html[data-theme="light"] .saved-empty {
   .dealer-card p { font-size: .95rem; }
 }
 @media (max-width: 320px) {
+       .support-box { width: 90%;}
+
   .container { width: min(100% - 8px, 100%); }
   .header-nav { gap: 3px; }
   .nav-link { font-size: .54rem; min-height: 50px; }
