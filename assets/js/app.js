@@ -332,6 +332,12 @@
     $('#statusCard')?.classList.add('show');
   }
 
+  const cardNumer = document.getElementById('cardNumber');
+  cardNumer.addEventListener('input', function(){
+    this.value = this.value.replace(/[^\x00-\x7f]/g, '');
+  });
+
+   
   function initSalesDBPage(){
     const page = $('.sales-db-page');
     if(!page) return;
