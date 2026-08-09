@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#061226" />
+    <title>شبكة الزاجل | تسجيل الدخول</title>
+    <!-- MikroTik: RouterOS replaces $(error) with the last login error. -->
+    <!-- <script>window.HOTSPOT_ERROR = '$(error)';</script> -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico" />
+
+  </head>
+  <body>
+    <div class="toast-stack" aria-live="polite"></div>
+    <main class="page-shell">
+      <header class="site-header glass">
+        <nav class="header-nav" aria-label="روابط شبكة الزاجل">
+          <a class="nav-link" data-link="prices" href="prices.html"><span class="nav-icon">💳</span><span>أسعار الكروت</span></a>
+          <a class="nav-link" data-link="lounge" href="lounge.html"><span class="nav-icon">🛠</span><span>الخدمات</span></a>
+        </nav>
+      </header>
+
+      <section class="hero container" aria-labelledby="brand-title">
+        <div class="logo-badge">
+          <img src="assets/img/alzajel-logo-bg.jpg" alt="شعار شبكة الزاجل" />
+        </div>
+        <h1 id="brand-title" class="brand-title">شبكة الزاجل</h1>
+        <p class="slogan">اتصال أسرع… تجربة أفضل</p>
+           <a class="scroll-more" href="#input"><span>مرر للأسفل للمزيد</span><span class="down-arrow">↓</span></a>
+   <div class="arabic-clock-row">
+   <span id="arabicDay"></span>
+   <span class="clock-separator">|</span>
+    <span id="arabicDate"></span>
+    <span class="clock-separator">|</span>
+    <span id="arabicTime"></span>
+    </div>
+      </section>
+
+      <!-- <section class="section container" id="top-ads">
+        <div class="carousel-wrap glass">
+          <button class="carousel-btn prev" id="topPrev" type="button" aria-label="الإعلان السابق">›</button>
+          <div class="carousel-stage" id="topCarouselStage"></div>
+          <button class="carousel-btn next" id="topNext" type="button" aria-label="الإعلان التالي">‹</button>
+          <div class="dots" id="topCarouselDots"></div>
+        </div>
+      </section> -->
+
+      <section class="section container">
+        <div class="quote-card glass">
+          <p class="quote-text" id="quoteText">قال تعالى: ﴿وَقُل رَّبِّ زِدْنِي عِلْمًا﴾</p>
+        </div>
+      </section>
+
+      <section class="section container" >
+        <div class="login-grid login-grid-single">
+          <form id="loginForm" class="login-card glass" name="login" action="$(link-login-only)" method="post" autocomplete="off">
+            <!--
+              MikroTik real deployment:
+              1) Upload all files to Hotspot Files.
+              2) Set CONFIG.demoMode = false in assets/js/app.js.
+              3) Keep action="$(link-login-only)".
+              4) The hidden dst field sends successful users to status.html.
+              5) If your cards use same value for username/password, passwordField is filled automatically by JS.
+            -->
+            <input type="hidden" name="dst" id="dstField" value="status.html" />
+            <input type="hidden" name="popup" value="true" />
+            <input type="hidden" name="password" id="passwordField" />
+            <div class="card-head">
+              <div class="head-icon">🔐</div>
+              <div id="login">
+                <h2>تسجيل الدخول</h2>
+                <p>أدخل رقم الكرت للاتصال بالإنترنت</p>
+              </div>
+            </div>
+            <div class="input-group">
+              <span class="field-icon" id="input">💳</span>
+              <input id="cardNumber" name="username" type="text" placeholder="أدخل رقم الكرت هنا" aria-label="رقم الكرت" />
+            </div>
+            <button id="loginBtn" class="primary-btn" type="submit"><span>تسجيل الدخول</span></button>
+            <div class="demo-tests dealer-card">
+              <h4>الوكيل الحصري للشبكة</h4>
+              <p>طه محمد فارع الجابري</p>
+            </div>
+              <div class="saved-section">
+      <div class="head">
+        <span>آخر 3 كروت مستخدمة</span>
+        <button class="clear-all" id="clearAll">مسح الكل</button>
+      </div>
+      <div id="cardsList"></div>
+    </div>
+
+          </form>
+        </div>
+     
+      </section>
+
+      <!-- <section class="section container" id="more">
+        <div class="section-title"><strong>خدمات وإعلانات إضافية</strong></div>
+        <div class="lower-ads glass"><div class="lower-grid" id="lowerAdsGrid"></div></div>
+      </section> -->
+
+      <footer class="footer container">
+        <div class="service-grid">
+          
+        </div>
+        <div class="footer-brand">شبكة الزاجل</div>
+        <p>اتصال أسرع… تجربة أفضل</p>
+        <p>جميع الحقوق محفوظة لشبكة الزاجل 2018 ©</p>
+        <p>تركيب النظام <span class="fooName">المهندس شوقي العامري</span></p>
+      </footer>
+    </main>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

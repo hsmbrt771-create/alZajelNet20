@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#061226" />
+    <title>شبكة الزاجل | بيانات الكرت</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico" />
+  </head>
+  <body class="status-page status-only-page">
+    <div class="toast-stack" aria-live="polite"></div>
+    <main class="container status-only-shell">
+      <section class="inner-hero status-hero">
+        <div class="logo-badge status-logo"><img src="assets/img/alzajel-logo-bg.jpg" alt="شعار شبكة الزاجل" /></div>
+        <h1 id="brand-title" class="brand-title">شبكة الزاجل</h1>
+        <p class="slogan">بيانات الكرت</p>
+        <p class="slogan">أنت متصل الآن — راقب الوقت والاستخدام من هنا</p>
+      </section>
+
+      <article id="statusCard" class="status-card glass show status-only-card">
+        <div class="card-head">
+          <div class="head-icon">📶</div>
+          <div>
+            <h2>حالة الاتصال</h2>
+                
+            <div class="arabic-clock-row">
+  <span id="arabicDay"></span>
+  <span class="clock-separator">|</span>
+  <span id="arabicDate"></span>
+  <span class="clock-separator">|</span>
+  <span id="arabicTime"></span>
+</div>
+          </div>
+          <span class="status-badge"><i class="pulse"></i> متصل</span>
+        </div>
+  
+        <div class="status-list">
+          <div class="status-item"><div class="status-label">👤 اسم المستخدم</div><div class="status-value" data-status="username">$(username)</div></div>
+          <div class="status-item"><div class="status-label">🎫 اسم الكرت / الباقة</div><div class="status-value" data-status="packageName">$(user-profile)</div></div>
+          <div class="status-item"><div class="status-label">💰 سعر الكرت</div><div class="status-value" data-status="price">حسب الكرت</div></div>
+          <div class="status-item"><div class="status-label">🕒 وقت الدخول</div><div class="status-value" data-status="loginTime">$(login-time)</div></div>
+          <div class="status-item"><div class="status-label">⏱ الوقت المستخدم</div><div class="status-value" data-status="usedTime">$(uptime)</div></div>
+          <div class="status-item"><div class="status-label">⌛ الوقت المتبقي</div><div class="status-value" data-status="remainingTime">$(session-time-left)</div></div>
+          <div class="status-item"><div class="status-label">📥 البيانات المستخدمة</div><div class="status-value" data-status="usedData">$(bytes-in-nice) / $(bytes-out-nice)</div></div>
+          <div class="status-item"><div class="status-label">📦 البيانات المتبقية</div><div class="status-value" data-status="remainingData">حسب الباقة</div></div>
+        </div>
+
+        <div class="progress-block">
+          <div class="progress-top"><span>نسبة الوقت المستخدم</span><span data-status="usedTime">$(uptime)</span></div>
+          <div class="progress"><span data-progress="time" style="width: 42%"></span></div>
+        </div>
+        <div class="progress-block">
+          <div class="progress-top"><span>نسبة البيانات المستخدمة</span><span data-status="usedData">$(bytes-in-nice)</span></div>
+          <div class="progress"><span data-progress="data" style="width: 35%"></span></div>
+        </div>
+
+        <div class="status-actions">
+          
+          <a class="logout-btn status-logout" href="$(link-logout)">تسجيل الخروج</a>
+        </div>
+      </article>
+
+      <footer class="footer status-footer">
+        <div class="footer-brand">شبكة الزاجل</div>
+        <p>اتصال أسرع… تجربة أفضل</p>
+      </footer>
+    </main>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
